@@ -1,10 +1,24 @@
-# Ignorar archivos de Python compilados
+# Archivos de Python compilados
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Ignorar archivos de entorno virtual
+# Entornos virtuales
 venv/
-.env
+.env/
+.envs/
 
-# Ignorar archivos de IDE
+# Archivos de IDE y editores
 .idea/
+.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de caché de pytest
+.pytest_cache/
+
+# Archivo de entorno sensible
+.env
