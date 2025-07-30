@@ -1,11 +1,16 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import JsonResponse
 
+# Redirige directamente al área de tareas
 @login_required
 def home(request):
-    return render(request, 'home.html')
+    return redirect('/api/tasks/')
 
-from django.shortcuts import redirect
-
-def redirect_to_tasks(request):
-    return redirect('/api/tasks')
+# Verifica autenticación (puede usarse con fetch desde el frontend si lo necesitas)
+@login_required
+def check_authentication(request):
+    return JsonResponse({
+        'authenticated': True,
+        'username': request.user.username
+    })
