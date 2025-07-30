@@ -1,24 +1,31 @@
-# Archivos de Python compilados
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.pyd
+*.so
 
-# Entornos virtuales
+# Entorno virtual
+env/
 venv/
-.env/
-.envs/
+ENV/
+.venv/
+.ENV/
 
-# Archivos de IDE y editores
-.idea/
-.vscode/
+# Archivos Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
 
-# Archivos del sistema
+# Configuración
+.env
+*.env
+
+# Archivos de sistema
 .DS_Store
 Thumbs.db
 
-# Archivos de caché de pytest
-.pytest_cache/
-
-# Archivo de entorno sensible
-.env
+# VS Code
+.vscode/
