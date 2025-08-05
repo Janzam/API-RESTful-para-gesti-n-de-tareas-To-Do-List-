@@ -22,3 +22,5 @@ Thumbs.db
 
 # Archivo de entorno sensible
 .env
+
+db.sqlite3
