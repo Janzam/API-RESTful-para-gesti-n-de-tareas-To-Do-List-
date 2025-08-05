@@ -1,4 +1,4 @@
-# Archivos de Python compilados
+# Archivos compilados de Python
 __pycache__/
 *.pyc
 *.pyo
@@ -9,18 +9,19 @@ venv/
 .env/
 .envs/
 
-# Archivos de IDE y editores
+# Archivos de configuración de IDEs y editores
 .idea/
 .vscode/
 
-# Archivos del sistema
+# Archivos del sistema operativo
 .DS_Store
 Thumbs.db
 
-# Archivos de caché de pytest
+# Caché de pytest
 .pytest_cache/
 
-# Archivo de entorno sensible
+# Archivo de variables de entorno (sensible)
 .env
 
+# Base de datos SQLite (local)
 db.sqlite3
