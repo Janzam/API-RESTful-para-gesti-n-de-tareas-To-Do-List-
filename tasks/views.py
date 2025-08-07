@@ -3,6 +3,6 @@ from .models import Task
 from .serializers import TaskSerializer
 
 class TaskViewSet(viewsets.ModelViewSet):
-    queryset = Task.objects.all().order_by('-created_at')
+    queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
