@@ -44,24 +44,28 @@ git clone https://github.com/Janzam/API-RESTful-para-gesti-n-de-tareas-To-Do-Lis
 cd API-RESTful-para-gesti-n-de-tareas-To-Do-List-
 
 
-**2Crear un entorno virtual e instalar dependencias:**
+**2. Crear un entorno virtual e instalar dependencias:**
 
-python -m venv venv
-source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
-pip install -r requirements.txt
+- python -m venv venv
+- source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
+- pip install -r requirements.txt
+- 
 **3. Configurar la base de datos y migraciones:**
-python manage.py makemigrations
-python manage.py migrate
+
+- python manage.py makemigrations
+- python manage.py migrate
 
 **4. Crear un superusuario (opcional pero recomendado):**
 
-python manage.py createsuperuser
+- python manage.py createsuperuser
+
 **5. Ejecutar el servidor:**
-python manage.py runserver
+
+- python manage.py runserver
 
 **Rutas**
-/api/tasks/  #crea tareas
-/api/tasks/[id]  #elimina por id o las modifica 
-/login/  
+- /api/tasks/  #crea tareas
+- /api/tasks/[id]  #elimina por id o las modifica 
+- /login/  
  
 
