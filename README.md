@@ -49,7 +49,7 @@ cd API-RESTful-para-gesti-n-de-tareas-To-Do-List-
 - python -m venv venv
 - source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
 - pip install -r requirements.txt
-- 
+
 **3. Configurar la base de datos y migraciones:**
 
 - python manage.py makemigrations
